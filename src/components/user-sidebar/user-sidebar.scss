@@ -1,0 +1,43 @@
+
+.user_div {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -moz-box-shadow: 0 10px 15px rgba(41, 43, 48, 0.2);
+    -webkit-box-shadow: 0 10px 15px rgba(41, 43, 48, 0.2);
+    box-shadow: 0 10px 15px rgba(41, 43, 48, 0.2);
+    width: 300px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -350px;
+    padding: 20px 15px;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 9999
+}
+
+.user_div.open {
+    left: 0
+}
+
+.user_div .user_btn {
+    float: right
+}
+
+.user_div .card {
+    background: transparent
+}
+
+.user_div .user_avatar {
+    -moz-box-shadow: 0 5px 10px 0 rgba(41, 43, 48, 0.4);
+    -webkit-box-shadow: 0 5px 10px 0 rgba(41, 43, 48, 0.4);
+    box-shadow: 0 5px 10px 0 rgba(41, 43, 48, 0.4);
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    height: 120px;
+    height: 120px
+}

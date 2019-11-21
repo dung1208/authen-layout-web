@@ -1,0 +1,107 @@
+
+.right_sidebar {
+    -moz-box-shadow: -2px 2px 5px rgba(41, 43, 48, 0.1);
+    -webkit-box-shadow: -2px 2px 5px rgba(41, 43, 48, 0.1);
+    box-shadow: -2px 2px 5px rgba(41, 43, 48, 0.1);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background: #fff;
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    right: -300px;
+    top: 0px;
+    z-index: 9999 !important;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none
+}
+
+.right_sidebar::-webkit-scrollbar {
+    width: 0px
+}
+
+@media screen and (max-width: 767px) {
+    .right_sidebar {
+        padding-bottom: 40px
+    }
+}
+
+.right_sidebar.open {
+    right: 0
+}
+
+.right_sidebar .settingbar {
+    position: absolute;
+    right: 0;
+    color: #f0b144;
+}
+
+.right_sidebar .nav-tabs {
+    margin: 0
+}
+
+.right_sidebar .nav-tabs+.tab-content {
+    padding: 20px
+}
+
+.nav-tabs {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: #9aa0ac;
+    user-select: none;
+    margin: 0 -.75rem;
+}
+.nav-item {
+    padding: 0 .75rem;
+    min-width: 2rem;
+    transition: .3s color;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.nav-tabs .nav-link {
+    transition: .3s border-color;
+    font-weight: 400;
+    border: 0;
+    color: inherit;
+    border-bottom: 1px solid transparent;
+    padding: 1rem 0;
+    font-size: 15px;
+}
+.nav-tabs .nav-link.active {
+    border-color: #004660;
+    color: #004660;
+}
+.nav-tabs .nav-link:hover:not(.disabled) {
+    border-color: #6e7687;
+    color: #6e7687;
+}
+.font-14{
+    font-size: 14px;
+}
+.custom-controls-stacked .custom-control {
+    margin-bottom: .25rem;
+}
+.custom-control {
+    user-select: none;
+}
+.custom-control-label{
+    color: #004660;
+    font-size: 15px;
+}
+.custom-control-label::before {
+    background-color: #fff;
+        border: #adb5bd solid 1px;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+     border-color: #004660; 
+  background-color: #004660;
+}

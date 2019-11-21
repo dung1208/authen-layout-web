@@ -1,0 +1,41 @@
+
+.theme_div {
+    -moz-box-shadow: -2px 2px 5px rgba(41, 43, 48, 0.1);
+    -webkit-box-shadow: -2px 2px 5px rgba(41, 43, 48, 0.1);
+    box-shadow: -2px 2px 5px rgba(41, 43, 48, 0.1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+    width: 278px;
+    height: 100vh;
+    position: fixed;
+    right: -280px;
+    top: 0px;
+    z-index: 9999 !important;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none
+}
+
+.theme_div::-webkit-scrollbar {
+    width: 0px
+}
+
+.theme_div.open {
+    right: 0
+}
+
+.theme_div .card {
+    border: 0
+}
+
+.theme_div .card .list-group a {
+    display: block
+}
+
+.theme_div .card .list-group a img {
+    border: 1px solid #E8E9E9
+}
